@@ -1,0 +1,34 @@
+from Tkinter import *
+
+class application(Frame):
+    
+    '''Sets up UI '''
+    def __init__(self,master):
+        Frame.__init__(self,master)
+        self.grid()
+        self.create_widgets()
+
+    ''' Creates buttons'''
+    def create_widgets(self):
+        self.button = Button(self)
+        self.button.configure(text = "QUIT",
+                              command = self.create_label(self))
+        self.button.grid(row=0,column=0)
+        #self.button2 = Button(self)
+        #self.button2.configure(text ="test",command = self.create_label())
+        #self.button2.configure=self.grid_location(2,3)
+
+    '''Do something'''    
+    def helloworld(self):
+        print "hello jed"
+def create_label(lottery):
+        label = Label(lottery)
+        label.configure(text = "hi:")
+        label.grid(row=1,column=0)        
+''' Creating window '''
+lottery = Tk()
+lottery.title("Lottery Generator")
+lottery.geometry("300x300")
+application(lottery)
+lottery.mainloop()
+

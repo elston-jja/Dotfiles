@@ -1,0 +1,56 @@
+from Tkinter import *
+from random import randint
+
+class app(Frame):
+
+    '''Initializes the window'''
+    def __init__(self,master):
+        Frame.__init__(self,master)
+        self.grid()
+        self.user_input_names_list = []
+        self.intro()
+        self.names_input()
+        self.master.bind('<Return>', self.check)
+        #self.done_button()
+        
+
+    '''Tells the user how to use the program'''    
+    def intro(self):
+        self.intro = 'Welcome, please enter contestants and click the done button'
+        self.intro_label = Label(self,text = self.intro)
+        self.intro_label.grid(row=0,column=0)
+
+    '''Create text box to input names'''
+    def names_input(self):
+        self.names_inp = StringVar() 
+        self.names_entry = Entry(self, textvariable = self.names_inp)
+        self.names_entry.grid(row=1,column=0)
+        
+    ''' Keyboard event enter'''
+        #self.check
+        
+    '''Makes sure the input is valid'''
+    def check(self,event):
+        self.names = self.names_inp.get()
+        if not self.names:
+            self.error_label
+        elif  15 < len(self.names) or len(self.names) < 3:
+            self.error_label
+        else:
+            self.user_input_names_list.append(self.names)
+            self.name_input()
+
+    '''Calling the error statemnt'''
+    def error_label(self):
+        self.error = Label(self, text = 'error')
+        self.error.grid(row=5,column=0)
+
+
+lottery_window = Tk()
+lottery_window.title('lottery picker')
+lottery_window.geometry('600x600')
+
+
+app(lottery_window)
+lottery_window.mainloop()
+    

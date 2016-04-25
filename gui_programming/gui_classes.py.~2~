@@ -1,0 +1,40 @@
+from Tkinter import *
+
+class application(Frame):
+
+    def __init__(self, master = None):
+        Frame.__init__(self,master)
+        self.grid()
+        self.create_passwd()
+        self.create_usrname()
+        self.register()
+
+    def create_passwd(self):
+        self.passwd_label = Label(self,text = 'enter password')
+        self.passwd_label.grid(row=1,column=0)
+        self.passwd_entry = Entry(self, textvariable = passwd)
+        self.passwd_entry.grid(row=1,column=1)
+
+    def create_usrname(self):
+        self.usr_label = Label(self,text = 'enter username')
+        self.usr_label.grid(row=0,column=0)
+        self.usr_entry = Entry(self, textvariable = usrname)
+        self.usr_entry.grid(row=0,column=1)
+        
+    def register(self):
+        self.submit_button = Button(self, text = 'submit',command = submit )
+        self.submit_button.grid(row=2,column=1)
+        
+    def submit(self):
+        final_username = usrname.get
+        final_passwd = passwd.get
+        self.values = Label(self, text = final_passwd + final_username)
+        self.values.grid(row=3,column=1)
+
+passwd = StringVar()
+usrname = StringVar()
+window = Tk()
+window.title("Gui Programming")
+window.geometry("300x300")
+application(window)
+window.mainloop()

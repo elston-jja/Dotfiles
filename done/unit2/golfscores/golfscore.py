@@ -93,28 +93,30 @@ def wait(till):
     if (platform.system() == "Windows"):
         float(till)
         time.sleep(till)
-        
-total = int(0) # creates int
-#Beginning cleans anything on the screen
-clear_screen()
-print ("Number of holes to score:"),
-#calls the def and will verify input is valid
-total_holes = holes_input_validation()
 
-'''Runs a Loop that would ask for hole scores and add them up'''
-for hole_input_loop in range (int(total_holes)):
+if __name__ == "__main__":
+    
+    total = int(0) # creates int
+    #Beginning cleans anything on the screen
     clear_screen()
-    print ("Score on hole " + str(int(hole_input_loop)+1) + " :"),
-    # Variable makes it easier to read ... yes it is a waste of space
-    new_amount = valid_user_input()
-    # print amount
-    total = int(total) + int(new_amount)
-    # print total
+    print ("Number of holes to score:"),
+    #calls the def and will verify input is valid
+    total_holes = holes_input_validation()
+    
+    '''Runs a Loop that would ask for hole scores and add them up'''
+    for hole_input_loop in range (int(total_holes)):
+        clear_screen()
+        print ("Score on hole " + str(int(hole_input_loop)+1) + " :"),
+        # Variable makes it easier to read ... yes it is a waste of space
+        new_amount = valid_user_input()
+        # print amount
+        total = int(total) + int(new_amount)
+        # print total
 
-# For my sanity and neatness
-clear_screen()
-#final print statement for total score and holes played
-print ("Your score over " + str(total_holes) + " holes is " + str(total) + " from par.")
+    # For my sanity and neatness
+    clear_screen()
+    #final print statement for total score and holes played
+    print ("Your score over " + str(total_holes) + " holes is " + str(total) + " from par.")
 
-'''only stops on windows machines to read final message'''
-wait(5)
+    '''only stops on windows machines to read final message'''
+    wait(5)

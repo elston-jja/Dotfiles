@@ -51,6 +51,9 @@ def wait(till):
     from time import sleep
     sleep(float(till))
 
+import time
+time.sleep(5.0)
+    
 def printf(str):
     from sys import stdout
     stdout.write(str)
