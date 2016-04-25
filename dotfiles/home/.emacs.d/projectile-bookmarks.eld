@@ -1,0 +1,1 @@
+("~/Dropbox/Projects/work/" "~/.fonts/")

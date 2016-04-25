@@ -1,0 +1,83 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ea/Dropbox/Projects/work/done/unit2/" . "lottery/")
+ ("/home/ea/Dropbox/Projects/work/done/" . "unit2/")
+ ("/home/" . "ea/")
+ ("/" . "etc/")
+ ("/home/ea/Dropbox/Projects/work/" . "War/")
+ ("/home/ea/" . ".config/")
+ ("/home/ea/.config/" . "i3/")
+ ("/home/ea/Dropbox/Projects/" . "work/")
+ ("/home/ea/Dropbox/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ea/"
+ "/home/ea/.config/i3/"
+ "/home/ea/Scripts/"
+ "/home/ea/Dropbox/Projects/work/War/"
+ "/home/ea/Dropbox/Projects/"
+ "/home/ea/Dropbox/Projects/work/done/unit2/lottery/"
+ "/home/ea/Dropbox/"
+ "/etc/"
+ "/home/ea/Dropbox/Projects/work/C/"
+ "/home/ea/pytesting/"
+ "/home/ea/Dropbox/Projects/work/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".Xresources"
+ "config"
+ "music.sh"
+ "VPN.sh"
+ "weather.sh"
+ "i3blocks.conf"
+ ".emacs"
+ "war.py"
+ "war_rev.py~"
+ "war_rev.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ea/" (22301 14923 756646 624000) ".zsh_history" ".gtkrc.mine" ".npm/" ".gtkrc-2.0" ".wget-hsts" ".j4-make-config.rc" ".gstreamer-0.10/" ".ideskrc~" "Pictures/" ".emacs" ".idesktop/" "Downloads/" ".xmms/" ".thumbnails/" ".PyCharm2016.1/" ".gtkrc.mine.~1~" ".zcompdump-EA-5.2" ".oh-my-zsh/" ".minecraft/" ".bash_logout" ".histfile" "Dropbox/" "Desktop/" ".gtkrc.mine~" ".ts3client/" "Documents/" "./" ".zcompdump" ".xdg_menu_cache/" ".local/" ".gtkrc-3.0~" ".steampid" ".PlayOnLinux/" ".dropbox/" ".zenmap/" ".java/" ".mplayer/" ".linuxbrew/" ".mozilla/" ".gitconfig" ".pki/" ".zshrc.pre-oh-my-zsh" ".cache/" ".ideskrc" ".Xresources" ".esd_auth" ".urxvt/" ".gtk-bookmarks" ".icons/" "../" ".gtkrc-2.0~" ".steam/" ".bash_profile" ".zshrc~" ".zshrcp/" ".zshrc" ".steampath" ".bashrc" "..html" ".xinitrc" ".gtkrc-3.0" ".nv/" ".viminfo" ".zsh-update" ".#.xinitrc" ".fonts/" ".config/" "Files/" ".covers/" ".wine/" ".completegitbackup/" ".themes/" ".emacs.d/" ".gtkrc-2.0.~1~" ".node-gyp/" ".v8flags.4.6.85.31.ea.json" "PlayOnLinux's virtual drives/" ".i3blocks.conf" ".xinitrc~" ".Xauthority" ".dropbox-dist/" ".pulse-cookie" ".Skype/" ".gnupg/" "Scripts/")
+
+ ("/home/ea/.config/i3/" (22301 4227 870136 908000) "i3status.conf" "./" "weather.sh" "i3blocks.conf" "i3status.conf~" ".#config" "screen-lock.png" "../" "background.jpg" "config.base" "config")
+
+ ("/home/ea/Scripts/" (22301 3091 70153 591000) "./" "vpn_connect.py" "music.sh" "VPN.sh" "../" "yt_play.sh")
+
+ ("/home/ea/Dropbox/" (22301 1350 140179 137000) "Projects/" "./" ".dropbox.cache/" ".dropbox" "dotfiles/" "Compsci/" "../" "Religion/" "Apps/" "Backups/")
+
+ ("/home/ea/.config/" (22300 28478 62356 731000) "epdfview/" "autostart/" "spotify/" "pulse/" "gtk-2.0/" "conky/" "pavucontrol.ini" "./" "tint2/" "transmission/" "xnoise/" "openbox/" "cmus/" "pyroom/" "geeqie/" "ckb/" "libreoffice/" "Trolltech.conf" "Discord/" "Skype/" "deadbeef/" "nitrogen/" "banshee-1/" "screengrab/" "volumeicon/" "mpd/" "wireshark/" "exaile/" "user-dirs.locale" "screen-lock.png" "gmusicbrowser/" "../" "QtProject.conf" "deluge/" "menus/" "pragha/" "awn/" "user-dirs.dirs" "xfce4/" "rage/" "libfm/" "gtk-3.0/" "i3/" "K/" "cef_user_data/" "mimeapps.list" "htop/" "gconf/" "sonata/" "dconf/" "pcmanfm/" "fontconfig/" "xmms2/" "vlc/")
+
+ ("/home/ea/Dropbox/Projects/work/C/" (22293 46072 125747 558000) "./" "../" "hello" "helloworld.c")
+
+ ("/etc/" (22300 28561 2358 453000) "request-key.conf" "conf.d/" "nsswitch.conf" "request-key.d/" "securetty" "texmf/" "motd" "services" "pcmcia/" "polkit-1/" "zsh/" "logrotate.d/" "irman.conf" "xinetd.d/" "gemrc" "lvm/" "inputrc~" "environment" "modules-load.d/" "gai.conf" "default/" "xml/" "netctl/" "host.conf" "pulse/" "modprobe.d/" "fstab" "gtk-2.0/" "NetworkManager/" "printcap" "shadow-" "group" "udev/" "mdadm.conf" "pm/" "geoclue/" "os-release" "i3status.conf" "locale.gen~" "./" "hardening-wrapper.conf" "inputrc" "hosts" "ImageMagick-6/" "issue" "bash.bashrc" "ts.conf" "clamav/" "mtab" "resolvconf.conf" "man_db.conf" "libreoffice/" "adjtime" "pkcs11/" "hostname~" "mpd.conf" "i3blocks.conf" "ca-certificates/" "ld.so.conf.d/" "machine-id" "java-7-openjdk/" "wpa_supplicant/" "shells" "dbus-1/" "vimrc" "lirc/" "login.defs" "netconfig" "i3status.conf~" "ethertypes" "ld.so.conf" "nanorc" "ld.so.cache" "papersize" "pacman.conf~" "gshadow" "avahi/" "sudoers.d/" "dhcpcd.duid" "update-menus.conf" "resolv.conf" "mke2fs.conf" "crypttab" "sudoers" ".pwd.lock" "udisks2/" "ifplugd/" "pacman.conf" "dhcpcd.conf" "xdg/" "../" "asciidoc/" "skel/" "arch-release" "libao.conf" "localtime" "openldap/" "passwd-" "cups/" "tmpfiles.d/" "resolv.conf.bak" "logrotate.conf" "initcpio/" "resolv.conf~" "profile" "rpc" "gtk-3.0/" "mime.types" "mail.rc" "i3/" "locale.gen" "security/" "vdpau_wrapper.cfg" "gshadow-" "slsh.rc" "drirc" "nscd.conf" "mkinitcpio.conf" "sysctl.d/" "private-internet-access/" "kernel/" "pacman.d/" "rc_keymaps/" "protocols" "bash.bash_logout" "systemd/" "pam.d/" "ssl/" "locale.conf" "iptables/" "gconf/" "X11/" "cupshelpers/" "hostname" "wgetrc" "group-" "mkinitcpio.d/" "libpaper.d/" "iproute2/" "mplayer/" "openvpn/" "rc_maps.cfg" "binfmt.d/" "libnl/" "fuse.conf" "passwd" "makepkg.conf" "fonts/" "i3blocks.conf~" "dhcpcd.secret" "locale.conf~" "depmod.d/" ".updated" "profile.d/" "shadow" "fstab~" "krb5.conf")
+
+ ("/home/ea/Dropbox/Projects/work/done/unit2/lottery/" (22296 1837 591722 737000) "./" "LotteryPicker_Flow.png" "HLD_lottery.png" "../" "randomlottery_v2.py" "randomlottery.py")
+
+ ("/home/ea/Dropbox/Projects/work/War/" (22298 61756 28369 245000) "./" "war.py" "../" "war.py~" "war_classes.py")
+
+ ("/home/ea/Dropbox/Projects/work/dotfiles/" (22288 28392 212405 424000) ".emacs" "./" "../")
+
+ ("/home/ea/Dropbox/Projects/work/" (22298 56151 51784 827000) "primemods.pyc" ".projectile" "War/" "./" "README.md" "dotfiles/" "C/" ".git/" "tic-tac-toe/" "../" "done/" "gui_programming/")
+
+ ("/home/ea/Dropbox/Projects/" (22298 56227 558450 370000) "./" "other/" "../" "work/" "personal/")
+
+ ("/home/ea/Dropbox/Projects/work/done/unit2/" (22271 19506 76029 523000) "personal_versions/" "./" "golfscores/" "lottery/" "storygenerator2/" "../" "doubles/")
+
+ ("/home/ea/Dropbox/Projects/work/done/" (22288 25183 332459 107000) "unit2/" "./" "unit3/" "../")
+
+ ("/home/ea/pytesting/" (22293 16659 255504 769000) "testing_deck.py" "./" "../")
+
+ ("/home/ea/.completegitbackup/" (22288 27522 732419 968000) "primemods.pyc" "./" "README.md" "zodiaccomp.py" "tic-tac-toe/" "war.py" "../" "war.py~" "zodiaccomp.py~" "done/" "gui_programming/")
+
+ ("/home/" (22261 44478 377957 356000) "./" "../" "ea/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

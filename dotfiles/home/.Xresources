@@ -1,0 +1,55 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+!rofi.color-enabled: true
+!rofi.color-window: #273238, #273238, #1e2529
+!rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+!rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+!rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+! ------------------------------------------------------------------------------
+! URXVT Config
+! ------------------------------------------------------------------------------
+! font
+URxvt*font: xft:Source\ Code\ Pro\ for\ Powerline:size=10
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+
+! Disable Scroll bar
+URxvt*scrollBar: false
+
+! terminal padding
+URxvt.internalBorder: 2
+
+urxvt*tintColor:white
+urxvt*transparent:true
+urxvt*shading:20
+
+
+! colors
+URxvt*background:        #222733
+URxvt*foreground:        #D8D8D8
+URxvt*cursorColor:       #93A1A1
+URxvt*colorUL:           #366060
+URxvt*underlineColor:    #dfaf8f
+URxvt*color0:            #073642
+URxvt*color1:            #DC322F
+URxvt*color2:            #2B313F
+URxvt*color3:            #B58900
+URxvt*color4:            #2B8BD2
+URxvt*color5:            #D33682
+URxvt*color6:            #2AA198
+URxvt*color7:            #D8D8D8
+URxvt*color8:            #002B36
+URxvt*color9:            #CB4B16
+URxvt*color10:           #46C45B
+URxvt*color11:           #657B83
+URxvt*color12:           #D8D8D8
+URxvt*color13:           #6C71C4
+URxvt*color14:           #D8D8D8
+URxvt*color15:           #ffffff
