@@ -1,6 +1,6 @@
 # School and Backup files
 
- Dot Files (to lazy to create a seprate repo)
+ Dot Files (to lazy to create a separate repo)
  
  Desktop Currently
 
