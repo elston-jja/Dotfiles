@@ -4,8 +4,8 @@
  
  Desktop Currently
 
- ![alt tag](http://imgur.com/DvDyZJb)
- ![alt tag](http://imgur.com/qj7IsA5)
+ ![alt tag](http://i.imgur.com/DvDyZJb.png)
+ ![alt tag](http://i.imgur.com/qj7IsA5.png)
  
  School Projects (I am horrible at python... coding in general)
 
