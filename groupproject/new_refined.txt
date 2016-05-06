@@ -1,0 +1,15 @@
+< START >
+
+The perpose of an information security analyst is to enhance security on networks, such as setting up firewalls,
+    managing file permissions, brute force attacks to ensure secure infulstructure, fixing kernel issues etc.
+
+They also help companies with risk management by creating backups and analyse data gathered from users.
+They are required to be familiar with operating systems based on UNIX and windowsm, additionally they should be comfortable with multiple data base platforms.
+
+< END >
+
+< Universities and collages >
+
+According to most jobs, it is recomended to have either a degree in computer sciences/engineering or have equivialant amount of work experience.
+
+Canadian Universities such as

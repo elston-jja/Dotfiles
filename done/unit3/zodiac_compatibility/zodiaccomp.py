@@ -63,9 +63,9 @@ def zodiac_check(month,day):
         return("Aquarius")
     elif (month == 3 and day >= 12) or (month == 4 and day <= 18):
         return("Pisces")
-    elif (month == 4 and day >= 18) or (month == 5 and day <= 13):
+    elif (month == 4 and day >= 19) or (month == 5 and day <= 13):
         return("Aries")
-    elif (month == 5 and day >= 13) or (month == 6 and day <= 21):
+    elif (month == 5 and day >= 14) or (month == 6 and day <= 21):
         return("Taurus")
     elif (month == 6 and day >= 22) or (month == 7 and day <= 20):
         return("Gemini")
@@ -102,29 +102,30 @@ def compatible(person,person_two):
     else:
         print "You are not compatible"
 
-running = True
-
-while running is True:
-
-    '''Set variables to compare, by getting user input'''
-    user1_month = birthday_month("you were")
-    user1_day = birthday_day("you")
-    check_new = True
-    while check_new is True:
-        user2_month = birthday_month("your partner")
-        user2_day = birthday_day("their")
-        
-        '''Sets Variables for Function Later'''
-        compatibility_user =  zodiac_check(user1_month,user1_day)
-        compatibility_partner = zodiac_check(user2_month,user2_day)
+if __name__ == "__main__":
+    running = True
+    while running is True:
+        '''Set variables to compare, by getting user input'''
+        user1_month = birthday_month("you were")
+        user1_day = birthday_day("you")
+        check_new = True
+        while check_new is True:
             
-        '''Runs to check compatibilty'''
-        compatible(compatibility_user,compatibility_partner)
-        
-        run_again = raw_input("Do you want to check compatibily again with another person?\n(y/N) : ")
-        
-        if run_again in ("y","yes","Y","YES","Dam straight I'm pissed, I'm not compatible"):
-            print "Hope tis the one for you this time"
-        else:
-            check_new = False
-            running = False
+            user2_month = birthday_month("your partner")
+            user2_day = birthday_day("their")
+            
+            '''Sets Variables for Function Later'''
+            compatibility_user =  zodiac_check(user1_month,user1_day)
+            compatibility_partner = zodiac_check(user2_month,user2_day)
+            
+            '''Runs to check compatibilty'''
+            compatible(compatibility_user,compatibility_partner)
+            
+            run_again = raw_input("Do you want to check compatibily again with another person?\n(y/N) : ")
+            
+            if run_again in ("y","yes","Y","YES","Dam straight I'm pissed, I'm not compatible"):
+                print "Hope tis the one for you this time"
+            else:
+                check_new = False
+                running = False
+                
