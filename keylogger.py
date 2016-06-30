@@ -47,13 +47,8 @@ if file_running != path_tmp:
 else:
     pygame.init()
     screen = pygame.display.set_mode( (100,100) )
-    pygame.display.set_caption('Python numbers')
+    pygame.display.set_caption('PY')
     screen.fill((159, 182, 205))
-    myfont = pygame.font.SysFont("monospace", 15)
-
-    # render text
-    label = myfont.render("Some text!", 90, (255,255,255))
-    screen.blit(label, (100, 100))
     
     finished = False
     while not finished:

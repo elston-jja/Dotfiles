@@ -197,6 +197,22 @@ e.g. Sunday, September 17, 2000."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "simp" :slant normal :weight normal :height 103 :width normal))))
+ '(default ((t (:family "Inconsolata" :foundry "PfEd" :slant normal :weight normal :height 103 :width normal))))
  '(mode-line ((t (:foreground "#AAAAAA" :background "#4F5B66" :box nil))))
  '(mode-line-inactive ((t (:foreground "#333333" :background "#4F5B66" :box nil)))))
+
+(define-key ac-completing-map (kbd "C-c j") 'ac-next)
+(define-key ac-completing-map (kbd "C-c k") 'ac-previous)  
+
+(define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
+
+
+(set-face-background 'ac-candidate-face "azure4")
+(set-face-underline 'ac-candidate-face "darkgray")
+(set-face-background 'ac-selection-face "grey59")
+
+;; Disable sleep
+(global-unset-key (kbd "C-z"))
+(global-unset-key [(control x)(control z)])
+;; Windows Style Undo
+(global-set-key [(control z)] 'undo)

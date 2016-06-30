@@ -5,21 +5,17 @@
 What is computer security?
 
 - The ability for one to restrict the unauthorized spread of data'
-- To patch and fix bugs
-- To maintain portocols (disposing hardware, exe files, users access)
+- To patch and fix bugs wheather in kernel or software.
+- To maintain protocols (disposing hardware, exe files, users access)
 - To create backups, always making sure least data is lost
 - Minimal downtime due to server checks
 - Monitor Network activity to check any anomylies in connected addresses.
 - Encryption is a major part of their jobs
-
+- Gather data for analysists or analyse data themselves
 
 What is encryption?
 
 - 
-
-
-
-
 
 Restiction of data, to only allow authorized individuals to access.
 

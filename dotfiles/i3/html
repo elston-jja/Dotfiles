@@ -1,0 +1,227 @@
+<!doctype html>
+
+<title>~</title>
+
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>WebFontConfig={google:{families:['Lato:300:latin']}};</script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" async></script>
+
+<style type="text/css">
+  body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2F343F;
+    color: #FFF;
+    font-family: Source Code Pro;
+  }
+
+  main {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-98px);
+    text-align: center;
+  }
+
+  time {
+    font-size: 5rem;
+    letter-spacing: 6px;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 310px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0D121D;
+    border-radius: 5px;
+    border-color: #000;
+    color: #fff;
+    font-family: monofur;
+    font-size: 1.1rem;
+  }
+
+  input,
+  input:focus {
+    border: 0;
+    outline: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  aside {
+    position: fixed;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    max-width: 190px;
+    height: 100%;
+    padding: 15px 0 0;
+    background-color: #222733;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 700ms;
+    transform: translateX(-205px);
+    overflow: auto;
+    z-index: 1;
+  }
+
+  aside[data-toggled='true'] {
+    transform: translateX(0);
+  }
+
+  h1 {
+    margin: 0 25px 15px;
+    line-height: 1rem;
+  }
+
+  ul {
+    margin: 0 0 15px;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    padding: 0 25px;
+    color: #999999;
+    line-height: 1.7rem;
+    text-decoration: none;
+  }
+
+  a:hover span:last-of-type {
+    text-decoration: underline;
+  }
+
+  span:first-of-type {
+    font-family: 'Courier New', monospace;
+  }
+
+  span:last-of-type {
+    font-size: 0.9rem;
+  }
+</style>
+
+<main>
+  <time id="js-clock"></time>
+  <form id="js-search-form" autocomplete="off">
+    <input id="js-search-input" type="text" autofocus>
+  </form>
+</main>
+
+<aside id="js-sidebar">
+  <h1>Shortcuts</h1>
+  <ul id="js-help"></ul>
+</aside>
+
+<script>
+  'use strict';
+
+  (function() {
+    var clock = document.getElementById('js-clock');
+
+    function leftpad(num) {
+      return ('0' + num.toString()).slice(-2);
+    }
+
+    function setTime() {
+      var date = new Date();
+      var hours = leftpad(date.getHours());
+      var minutes = leftpad(date.getMinutes());
+      clock.innerHTML = hours + ' ' + minutes;
+    }
+
+    setTime();
+    setInterval(setTime, 1000);
+  })();
+
+  (function(opts) {
+    var sidebar = document.getElementById('js-sidebar');
+    var searchForm = document.getElementById('js-search-form');
+    var searchInput = document.getElementById('js-search-input');
+    var searchHelp = document.getElementById('js-help');
+    var urlRegex = /(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})/;
+
+    opts.commands.forEach(function(command) {
+      var li = document.createElement('li');
+      var link = document.createElement('a');
+      var key = document.createElement('span');
+      var name = document.createElement('span');
+
+      key.innerHTML = command.key + ': ';
+      name.innerHTML = command.name;
+      link.href = command.url;
+
+      link.appendChild(key);
+      link.appendChild(name);
+      li.appendChild(link);
+      searchHelp.appendChild(li);
+    });
+
+    searchForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var q = searchInput.value.trim();
+      var redirect = '';
+
+      if (q === '' || q === '?') {
+        sidebar.setAttribute('data-toggled', true);
+        searchInput.value = '';
+        return false;
+      }
+
+      if (q.match(new RegExp(urlRegex))) {
+        redirect = q;
+      } else {
+        redirect = opts.defaultCommand + encodeURIComponent(q);
+      }
+
+      q = q.split(opts.delimiter);
+
+      opts.commands.forEach(function(command) {
+        if (q[0] === command.key) {
+          if (q[1] && command.search) {
+            q.shift();
+            var search = encodeURIComponent(q.join(opts.delimiter).trim());
+            redirect = command.url + command.search + search;
+          } else {
+            redirect = command.url;
+          }
+        }
+      });
+
+      window.location.href = redirect;
+    }, false);
+
+    document.addEventListener('keydown', function(event) {
+      if (event.keyCode === 27) sidebar.removeAttribute('data-toggled');
+    });
+  })({
+    delimiter: ':',
+    defaultCommand: 'https://www.google.com/search?q=',
+    commands: [
+      { key: 'a', name: 'Amazon', url: 'https://www.amazon.ca', search: '/s/?field-keywords=' },
+      { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
+      { key: 'f', name: 'Facebook', url: 'https://www.facebook.com', search: '/search/top/?q=' },
+      { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
+      { key: 'h', name: 'Hacker News', url: 'https://hn.algolia.com', search: '/?query=' },
+      { key: 'i', name: 'Inbox', url: 'https://inbox.google.com', search: '/search/' },
+      { key: 'k', name: 'KickAss', url: 'https://kat.cr', search: '/search/' },
+      { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/r/' },
+      { key: 's', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+      { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
+      { key: 'y', name: 'YouTube', url: 'https://www.youtube.ca', search: '/results?search_query=' }
+    ]
+  });
+</script>
