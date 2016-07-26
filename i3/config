@@ -11,7 +11,7 @@ font pango: Hack 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -111,7 +111,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b '' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Edit system files / Exit i3 WM ' -b ' edit config ' 'vim $HOME/.config/i3/config'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -191,17 +191,17 @@ bindsym $mod1+bracketright move container to output right
 set $bg-color			#00000099
 set $inactive-bg-color		#00000099
 set $inactive-u-color		#22273399
-set $text-color			#FFFFFF
+set $text-color			#FFFFFFFF
 set $inactive-text-color	#66666699
 set $urgent-bg-color		#55555599
 
 # Window Colors
 # key			  border	     background		text
-client.focused		  #FFFFFF	     #6D9EBD		$text-color	     #8FBFDF99
+client.focused		  #FFFFFFFF	     #6D9EBD		$text-color	     #8FBFDF99
 client.focused_inactive   $inactive-u-color $inactive-bg-color  $inactive-text-color #222733
 client.unfocused	  $inactive-u-color $inactive-bg-color	$inactive-text-color #222733
 client.urgent		  $urgent-bg-color  $inactive-bg-color	$inactive-text-color #222733
-client.background	  #222733
+client.background	  #222733FF
 
 # i3 Top Bar
 bar {
@@ -217,9 +217,9 @@ bar {
 	       background		  #00000099
 	       separator		  #FFFFFF99
 	       focused_workspace	  $bg-color	     $bg-color		$text-color
-	       active_workspace 	  $inactive-bg-color $inactive-bg-color $inactive-text-color
+	       active_workspace 	  $inactive-bg-color $inactive-bg-color $text-color
 	       inactive_workspace	  $inactive-bg-color $inactive-bg-color	$inactive-text-color 
-	       urgent_workspace	  	  $urgent-bg-color   $urgent-bg-color	$inactive-text-color	     
+	       urgent_workspace	  	  $urgent-bg-color   $urgent-bg-color	$text-color	     
 	       }
 } 
 bar {
@@ -254,6 +254,8 @@ exec --no-startup-id compton &
 exec --no-startup-id xfce4-terminal --title="Term" &
 exec --no-startup-id firefox &
 exec --no-startup-id spotify &
+exec --no-startup-id urxvt -e hangups --col-palette-colors 256 --col-msg-sender-fg '#F0F' --col-msg-self-fg '#55d' --col-msg-text-fg '#4AD' --col-status-line-fg '#FFF' --col-status-line-bg '#39D' --col-tab-background-bg '#39D' --col-tab-background-fg '#FFF' --col-inactive-tab-bg '#59D' --col-inactive-tab-fg '#555' --col-active-tab-bg '#66F' --col-active-tab-fg '#9FF' --col-msg-date-fg '#555'
+
 
 ##########################################################################################
 #				Window Specific Options
@@ -269,6 +271,7 @@ for_window [class="Steam"] floating enable
 for_window [title="Term"] floating enabled
 for_window [class="^Xfce4-notifyd$"] floating enable; border none; focus mode_toggle
 
+no_focus [window_role="popup"]
 
 # Workspace on Different monitors (xrandr)
 workspace $workspace1 output DP-1
@@ -285,13 +288,15 @@ focus_follows_mouse no
 # Remove bars arround
 hide_edge_borders both
 
-# Apps on Workspaces
+# Apps on Workspaces (xprop)
 assign [title="Term"]    $workspace1
 assign [class="Steam"]   $workspace4
 assign [class="Firefox"] $workspace3
 assign [class="Emacs"]   $workspace2
 assign [class="MPlayer"] $workspace5
-assign [title="Spotify"] $workspace10
+for_window [class="Spotify"] move to workspace $workspace10
+for_window [class="URxvt"] move to workspace $workspace3
+
 
 ##########################################################################################
 #				 Gaps
@@ -338,13 +343,13 @@ workspace $workspace1 gaps inner 15
 workspace $workspace1 gaps outer 15
 workspace $workspace2 gaps inner 15
 workspace $workspace2 gaps outer 15
-workspace $workspace3 gaps inner 0
-workspace $workspace3 gaps outer 0
+workspace $workspace3 gaps inner 5
+workspace $workspace3 gaps outer 5
 workspace $workspace4 gaps inner 15
 workspace $workspace4 gaps outer 15
 workspace $workspace5 gaps inner 15
 workspace $workspace5 gaps outer 15
 workspace $workspace9 gaps inner 15
 workspace $workspace9 gaps outer 15
-workspace $workspace10 gaps inner 15
-workspace $workspace10 gaps outer 15
+workspace $workspace10 gaps inner 5
+workspace $workspace10 gaps outer 5

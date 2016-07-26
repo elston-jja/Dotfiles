@@ -11,8 +11,8 @@ rofi.color-urgent: #517685, #ffffff, #517685, #7da0af, #ffffff
 !
 !------------------------------------------------------------------------------
 ! font
-URxvt*font: xft:Source Code Pro for Powerline:size=12
-Xft.autohint: 0
+URxvt*font: xft:monofur for powerline:size=10
+Xft.autohint: 1
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
 Xft.hinting: 1
@@ -31,24 +31,24 @@ URxvt.internalBorder: 2
 
 
 ! colors
-URxvt*background:        #222733
-URxvt*foreground:        #FFFFFF
-URxvt*cursorColor:       #93A1A1
+URxvt*background:        #2F343F
+URxvt*foreground:        #D0D0D0
+URxvt*cursorColor:       #DDFFDD
 URxvt*colorUL:           #FFFFFF
 URxvt*underlineColor:    #dfaf8f
-URxvt*color0:            #222222
-URxvt*color1:            #DC322F
-URxvt*color2:            #00F3FF
-URxvt*color3:            #B58900
-URxvt*color4:            #2B8BD2
-URxvt*color5:            #D33682
-URxvt*color6:            #2AA198
-URxvt*color7:            #D8D8D8
-URxvt*color8:            #FFFFFF
-URxvt*color9:            #CB4B16
-URxvt*color10:           #FFFFFF
-URxvt*color11:           #FFFFFF
-URxvt*color12:           #FFFFFF
-URxvt*color13:           #FFFFFF
-URxvt*color14:           #FFFFFF
-URxvt*color15:           #FFFFFF
+URxvt*color0:            #393939
+URxvt*color1:            #D46765
+URxvt*color2:            #41D6D8
+URxvt*color3:            #CEB07F
+URxvt*color4:            #5D96C1
+URxvt*color5:            #DB76A7
+URxvt*color6:            #6FB3AE
+URxvt*color7:            #9A9A9A
+URxvt*color8:            #5D5D5D
+URxvt*color9:            #EBB199
+URxvt*color10:           #7ED78D
+URxvt*color11:           #D9D862
+URxvt*color12:           #94B3E4
+URxvt*color13:           #9295D0
+URxvt*color14:           #D8D8D8
+URxvt*color15:           #D8D8D8

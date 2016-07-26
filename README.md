@@ -1,11 +1,5 @@
-# School and Backup files
+# DotFiles 
 
- Dot Files (to lazy to create a separate repo)
- 
- Desktop Currently
+A backup for i3 gaps next and i3 blocks gaps
 
- ![alt tag](http://i.imgur.com/DvDyZJb.png)
- ![alt tag](http://i.imgur.com/qj7IsA5.png)
- 
- School Projects (I am horrible at python... coding in general)
 
