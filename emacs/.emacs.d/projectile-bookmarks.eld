@@ -1,0 +1,1 @@
+("~/Dropbox/Projects/work/" "~/i3lock-fancy-multimonitor/" "~/.fonts/")

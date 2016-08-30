@@ -1,0 +1,158 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ea/Dropbox/Projects/personal/c++/" . "HelloWorld/")
+ ("/home/ea/Files/Windows Users File/WinLib_1-6/" . "WinLib/")
+ ("/home/ea/Files/Windows Users File/" . "WinLib_1-6/")
+ ("/home/ea/Files/" . "Windows Users File/")
+ ("/home/ea/Dropbox/Apps/" . "drawio/")
+ ("/home/ea/Downloads/Nitrogen/" . "Backgrounds/")
+ ("/home/ea/Downloads/" . "Nitrogen/")
+ ("/home/ea/Dropbox/Projects/personal/" . "c++/")
+ ("/home/ea/Dropbox/Projects/work/done/unit2/" . "lottery/")
+ ("/home/ea/Dropbox/Projects/work/done/" . "unit2/")
+ ("/home/" . "ea/")
+ ("/" . "etc/")
+ ("/home/ea/Dropbox/Projects/work/" . "tic-tac-toe/")
+ ("/home/ea/" . "Dropbox/")
+ ("/home/ea/.config/" . "i3/")
+ ("/home/ea/Dropbox/Projects/" . "personal/")
+ ("/home/ea/Dropbox/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ea/Dropbox/Projects/personal/c++/HelloWorld/"
+ "/home/ea/Dropbox/Projects/personal/c++/"
+ "/home/ea/"
+ "/home/ea/.config/i3/"
+ "/home/ea/Dropbox/Projects/personal/"
+ "/home/ea/Files/Windows Users File/WinLib_1-6/WinLib/"
+ "/home/ea/.config/hangups/"
+ "/home/ea/Dropbox/Apps/drawio/"
+ "/home/ea/Dropbox/cpt/"
+ "/home/ea/Scripts/"
+ "/home/ea/Dropbox/proj1/"
+ "/home/ea/.config/yabar/"
+ "/home/ea/Dropbox/"
+ "/home/ea/Dropbox/Projects/work/"
+ "/home/ea/Dropbox/Projects/work/tic-tac-toe/"
+ "/home/ea/Downloads/Nitrogen/Backgrounds/"
+ "/home/ea/.ncmpcpp/"
+ "/home/ea/.mpd/"
+ "/home/ea/Dropbox/Religion/"
+ "/home/ea/Dropbox/Projects/work/groupproject/"
+ "/home/ea/Dropbox/Projects/work/War/"
+ "/home/ea/Dropbox/Projects/"
+ "/home/ea/Dropbox/Projects/work/done/unit2/lottery/"
+ "/etc/"
+ "/home/ea/Dropbox/Projects/work/C/"
+ "/home/ea/pytesting/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "helloworld.cpp"
+ "eightqueens.cpp"
+ "sound.cpp"
+ ".emacs"
+ "config"
+ ".gitignore"
+ "conversions.cpp"
+ "count"
+ "conversions"
+ "main.cpp"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ea/Dropbox/Projects/personal/c++/HelloWorld/" (22470 1742 960367 720000) "./" "../" "helloworld" "helloworld.cpp")
+
+ ("/home/ea/Dropbox/Projects/personal/c++/" (22469 58068 897073 416000) "Testing/" ".vscode/" "./" "GameOfLife/" "Guessing/" "SimonSays/" "sound.cpp" "sound" "HelloWorld/" "Count/" "td.cpp" "../" "eightqueens.cpp" "eightqueens" "scrap" "Conversions/" "te" "RandomLottery/")
+
+ ("/home/ea/.config/i3/" (22468 45801 524204 49000) "i3lock/" "./" "workspace-10.json" "weather.sh" "i3blocks.conf" "../" ".monitor2_i3blocks.conf.swp" "monitor2_i3blocks.conf" "html" "config.base" "config" "monitor1_i3blocks.conf" "file.conf")
+
+ ("/home/ea/" (22469 52390 770430 811000) ".zsh_history" ".npm/" ".gtkrc-2.0" ".ICEauthority" ".wget-hsts" ".gstreamer-0.10/" "Pictures/" ".emacs" ".idesktop/" ".electron/" ".weechat/" "Downloads/" ".xmms/" ".ipython/" ".vscode/" ".thumbnails/" ".zcompdump-EA-5.2" ".oh-my-zsh/" ".minecraft/" ".bash_logout" ".histfile" "Dropbox/" "Desktop/" ".git-credentials" ".swp" ".ts3client/" ".ncmpcpp/" ".mpd/" "./" ".zcompdump" ".xdg_menu_cache/" ".local/" ".atom/" ".steampid" ".PlayOnLinux/" ".dropbox/" ".zenmap/" ".java/" ".mplayer/" ".linuxbrew/" ".mozilla/" ".lyrics/" ".gitconfig" ".pki/" ".cache/" ".Xresources" ".python_history" ".kde4/" ".esd_auth" ".dmrc" ".urxvt/" ".ssh/" ".gtk-bookmarks" ".spf13-vim-3/" ".bash_history" ".gnome/" ".vim/" ".gede.ini" ".rotate.py.swp" ".icons/" "../" ".vimrc" ".steam/" ".bash_profile" "VirtualBox VMs/" ".zshrc~" ".zshrc" ".steampath" "gede.ini" ".ninja_ide/" ".bashrc" ".xinitrc" ".gtkrc-3.0" ".nv/" ".viminfo" ".Xresources~" ".zsh-update" ".fonts/" ".config/" "Files/" ".wine/" ".themes/" ".emacs.d/" ".node-gyp/" ".nvidia-settings-rc" ".xinitrc~" "node-pokemap/" ".Xauthority" ".dropbox-dist/" ".pulse-cookie" ".Skype/" ".gnupg/" "Scripts/" ".gimp-2.8/")
+
+ ("/home/ea/Dropbox/" (22469 52393 860430 798000) "Carl Sagan - Cosmos (1980) [Full Color Illustrated]/" "cover.jpg" "Projects/" "ChemicalEquationBalencer/" "cpt/" "Physics class id's.jpg" "./" ".dropbox.cache/" ".dropbox" "Cosmos - Carl Sagan.epub" "The Great Gatsby - F. Scott Fitzgerald.epub" "Calculus_Essentials_For_Dummies.pdf" "../" "#Backups#" "linux cheat sheet.docx" "Thirteen Reasons Why/" "app-debug.apk" "python/" "metadata.opf" "Apps/" "Backups/" "IMG_20160625_201228.jpg" "University Physics with Modern Physics 14ed [2015].pdf" "Brave New World   Aldous Huxley   Audiobook Full.mp3")
+
+ ("/home/ea/.config/" (22467 55954 923481 219000) "epdfview/" "Electron/" "sxhkd/" "google-chrome/" "fish/" "autostart/" "spotify/" "pulse/" "gtk-2.0/" "yelp/" "bspwm/" "conky/" "pavucontrol.ini" "./" "transmission/" "xnoise/" "cmus/" "google-googletalkplugin/" "pyroom/" "geeqie/" "libreoffice/" "Trolltech.conf" "Discord/" "neofetch/" "Skype/" "nitrogen/" "cava/" "screengrab/" "git/" "mpd/" "wireshark/" "user-dirs.locale" "../" "sublime-text-3/" "QtProject.conf" "deluge/" "jumanji/" "Atom/" "hangups/" ".vimrc" "menus/" "VirtualBox/" "user-dirs.dirs" "xfce4/" "rage/" "libfm/" "gtk-3.0/" "i3/" "mate/" "yabar/" "monitors.xml" "Ghetto Skype/" "cef_user_data/" "mimeapps.list" "htop/" "gconf/" "dconf/" "Thunar/" "fontconfig/" "Franz/" "termite/" "caja/" "xmms2/" "Code/" "vlc/" "livestreamer-twitch-gui/")
+
+ ("/home/ea/Dropbox/Projects/personal/" (22448 62688 575870 779000) "c++/" "./" "README.md" ".gitignore" ".git/" "../" "python/" "c/")
+
+ ("/home/ea/Dropbox/Projects/work/" (22423 61181 796498 745000) "Dotfiles/" "./" "../")
+
+ ("/home/ea/Files/Windows Users File/WinLib_1-6/WinLib/" (22397 46606 0 0) "x64/" "WinLibTypes.h" "WinLib.vcxproj.user" "WinLib.vcxproj.filters" "WinLib.vcxproj" "WinLib.h" "WinLib.cpp" "texture.bmp" "main.cpp" "InputHandler.h" "InputHandler.cpp" "Elements.h" "Elements.cpp" "Container.h" "Container.cpp" "../" "./")
+
+ ("/home/ea/Files/Windows Users File/WinLib_1-6/" (22413 43613 430811 700000) "x64/" "WinLib.sln" "WinLib.sdf" "WinLib/" ".vs/" "../" "./")
+
+ ("/home/ea/Files/Windows Users File/" (22413 43612 383376 700000) "WinLib_1-6.zip" "WinLib_1-6/" "Green/" "../" "./")
+
+ ("/home/ea/Files/SteamLibrary/" (22388 17735 117763 800000) "SteamUI.dll" "WriteMiniDump.exe" "winh264.dll" "vstdlib_s64.dll" "vstdlib_s.dll" "video.dll" "v8.dll" "uninstall.exe" "tier0_s64.dll" "tier0_s.dll" "ThirdPartyLegalNotices.html" "ThirdPartyLegalNotices.doc" "ThirdPartyLegalNotices.css" "tenfoot/" "streaming_client.exe" "SteamOverlayVulkanLayer64.json" "SteamOverlayVulkanLayer64.dll" "SteamOverlayVulkanLayer.json" "SteamOverlayVulkanLayer.dll" "steamerrorreporter64.exe" "steamerrorreporter.exe" "steamclient64.dll" "steamclient.dll" "steamapps/" "Steam.exe.old" "../" "./")
+
+ ("/home/ea/Files/" (22406 46125 731855 600000) "Windows Users File/" "SteamLibrary/" "../" "./")
+
+ ("/home/ea/.config/hangups/" (22413 25648 507246 364000) "./" "../" "hangups.conf" "hangups_test.py")
+
+ ("/etc/" (22400 32386 784878 353000) "request-key.conf" "conf.d/" "nsswitch.conf" "request-key.d/" "securetty" "gimp/" "texmf/" "motd" "services" "pcmcia/" "nsswitch.conf~" "polkit-1/" "zsh/" "logrotate.d/" "irman.conf" "healthd.conf" "xinetd.d/" "gemrc" "fish/" "lvm/" "inputrc~" "environment" "modules-load.d/" "gai.conf" "default/" "xml/" "sensors.d/" "netctl/" "UPower/" "host.conf" "pulse/" "modprobe.d/" "fstab" "gtk-2.0/" "NetworkManager/" "printcap" "shadow-" "group" "udev/" "mdadm.conf" "pm/" "geoclue/" "os-release" "i3status.conf" "locale.gen~" "./" "hardening-wrapper.conf" "inputrc" "hosts" "ImageMagick-6/" "issue" "bash.bashrc" "lsb-release" "ts.conf" "clamav/" "mtab" "resolvconf.conf" "man_db.conf" "libreoffice/" "adjtime" "pkcs11/" "hostname~" "mpd.conf" "xrdb/" "sensors3.conf" "i3blocks.conf" "ca-certificates/" "ld.so.conf.d/" "machine-id" "java-7-openjdk/" "wpa_supplicant/" "mate-settings-daemon/" "reaver/" "shells" "dbus-1/" "vimrc" "lirc/" "asound.conf~" "login.defs" "netconfig" "i3status.conf~" "ethertypes" "ld.so.conf" "nanorc" "ld.so.cache" "papersize" "pacman.conf~" "gshadow" "avahi/" "sudoers.d/" "dhcpcd.duid" "update-menus.conf" "resolv.conf" "mke2fs.conf" "crypttab" "sudoers" ".pwd.lock" "udisks2/" "ifplugd/" "pacman.conf" "dhcpcd.conf" "xdg/" "../" "asciidoc/" "skel/" "arch-release" "libao.conf" "localtime" "openldap/" "passwd-" "cups/" "tmpfiles.d/" "resolv.conf.bak" "logrotate.conf" "initcpio/" "resolv.conf~" "profile" "rpc" "gtk-3.0/" "mime.types" "apparmor.d/" "mail.rc" "i3/" "locale.gen" "security/" "passwd.OLD" "vdpau_wrapper.cfg" "gshadow-" "slsh.rc" "drirc" "nscd.conf" "mkinitcpio.conf" "sysctl.d/" "private-internet-access/" "kernel/" "pacman.d/" "asound.conf.pacsave" "rc_keymaps/" "protocols" "bash.bash_logout" "systemd/" "pam.d/" "ssl/" "locale.conf" "iptables/" "gconf/" "X11/" "cupshelpers/" "hostname" "wgetrc" "group-" "mkinitcpio.d/" "libpaper.d/" "iproute2/" "lightdm/" "mplayer/" "openvpn/" "rc_maps.cfg" "binfmt.d/" "libnl/" "fuse.conf" "passwd" "makepkg.conf" "asound.conf.pacnew" "fonts/" "i3blocks.conf~" "dhcpcd.secret" "locale.conf~" "depmod.d/" ".updated" "speech-dispatcher/" "profile.d/" "shadow" "fstab~" "krb5.conf")
+
+ ("/home/ea/Dropbox/Projects/" (22391 22276 736286 992000) "./" "other/" "../" "work/" "personal/")
+
+ ("/home/ea/Dropbox/Projects/work/tic-tac-toe/" (22401 54474 362927 752000) "example.py" "Tests/" "client.py" "./" "2client.py" "Images/" "networking/" "mouse_tracking.py~" "../" "server.py" "mouse_tracking.py" "tic-tac-toe.py" "tic-tac-toe.py~")
+
+ ("/home/ea/.config/yabar/" (22355 43949 937827 381000) "./" "../" "yabar.conf")
+
+ ("/home/ea/Scripts/" (22387 65063 73669 245000) "machine_start.py" "./" "hangouts.sh" "vpn_connect.py" "workspace10_loadout.sh" "welcome.py" "welcome.sh" "VPN.sh" "../" "webpage.sh" "screen.sh" "yt_play.sh" "i3ws.py" "exit.sh")
+
+ ("/home/ea/Dropbox/cpt/" (22391 26605 552989 390000) "testmodules.py" "testingnew.py" "./" "main.pyc" "README.md" "main.py" "map_list.py" ".git/" "../" "main_rev.py" "map_list.pyc" "ImagesAndSounds/")
+
+ ("/home/ea/Dropbox/Apps/drawio/" (22396 1142 545839 671000) "Screenshot_20160627-161440.png" "Screenshot_20160627-164431.png" "Snapchat-8579219856554603344.jpg" "Screenshot_20160627-154331.png" "4794436c92815a4ceb417260.jpeg" "Screenshot_20160627-154101.png" "IMG_20160704_231101.jpg" "_20160627_165601.JPG" "Screenshot_20160627-155851.png" "./" "Screenshot_20160627-153949.png" ".dropbox" "34e34d6090272ee20973935d.jpeg" "e53247a5821f4dfac0b3b985.jpeg" "Snapchat-3240634609916781586.jpg" "Snapchat-6575854562890708479.jpg" "IMG_20160627_123722.jpg" "IMG_20160627_112726.jpg" "9cc64c3cb61f156051a76db8.jpeg" "Screenshot_20160627-161822.png" "Flowchart.jpg" "f8014064bd8ed05e3e07757d.png" "Screenshot_20160627-160520.png" "241749b9882474f929dfea79.jpeg" "IMG_20160627_123906.jpg" "../" "rework.png" "6ca54b85ae383c93cb08c716.png" "Flowchart2.jpg" "IMG_20160627_123719.jpg" "IMG_20160627_123706.jpg" "story" "Double" "IMG_20160627_123919.jpg" "Screenshot_20160627-154245.png" "IMG_20160627_123724.jpg" "IMG_20160627_123725.jpg" "Screenshot_20160627-160332.png")
+
+ ("/home/ea/Dropbox/Apps/" (22262 48606 730496 848000) "drawio/" "./" "../")
+
+ ("/home/ea/Dropbox/Religion/" (22327 57716 608815 228000) "Aboriginals/" "Hinduism/" "Religion_shit.docx" "./" "Buddism.bak" "Judaism.bak" "religiontest.txt~" "Grade 11 World Religions Ghandhi.tmd" "hindusim_rev" "../" "Grade 11 World Religions Ghandhi.bak" "Grade 11 World Religions Ghandhi.doc" "Beliefs of Buddhism.doc" "Beliefs of Buddhism.tmd" "hrt.docx" "Beliefs of Buddhism.bak" "Buddism.doc")
+
+ ("/home/ea/.mpd/" (22325 23927 516964 719000) "mpdstate" "state" "database" "mpd.log" "./" "sticker.sql" "../" "log" "mpd.db" "config")
+
+ ("/home/ea/Downloads/Nitrogen/Backgrounds/" (22354 14035 562416 600000) "yKwPgRs.jpg" "wallhaven-64089.jpg" "wallhaven-379838.png" "wallhaven-375988.jpg" "wallhaven-287980.jpg" "Mbr8pDa.png" "Andromeda-elaborata.jpg" "227329-simple-simple_background-primary_colors-minimalism-geometry-abstract.png" "../" "./")
+
+ ("/home/ea/Dropbox/proj1/" (22353 58826 627639 900000) "./" "brickbreaker.py" "../")
+
+ ("/home/ea/.config/neofetch/" (22334 40231 42584 403000) "./" "../" "config")
+
+ ("/home/ea/Desktop/" (22323 43347 414432 132000) "./" "../")
+
+ ("/home/ea/Downloads/Nitrogen/" (22309 16197 242351 500000) "Backgrounds/" "../" "./")
+
+ ("/home/ea/Downloads/" (22327 40543 52864 500000) "pickups/" "PhotoshopCS6_Linux.exe" "Nitrogen/" "hrt.docx" "pyroom-0.4.1/" "hangups/" "whhg-font/" "#Directories/" "../" "./")
+
+ ("/home/ea/.ncmpcpp/" (22325 20572 353764 444000) "error.log" "./" "../" "config")
+
+ ("/home/ea/Dropbox/Projects/work/groupproject/" (22318 15836 105817 371000) "./" "intro~" "intro" "new_refined.txt" "../" "#intro#")
+
+ ("/home/ea/Dropbox/Projects/work/War/" (22301 42338 411782 106000) "./" "war.py" "../" "war.py~")
+
+ ("/home/ea/Dropbox/Projects/personal/c/" (22315 61425 741288 894000) "functions/" "./" "forloops/" "../" "pointers/" "input.c" "whileloops/" "newprogram/")
+
+ ("/home/ea/Dropbox/Backups/" (22315 63905 354642 696000) "!home!ea!Dropbox!Projects!work!done!unit3!war_cardgame!war_rev.py~" "!home!ea!Scripts!workspace10_loadout.sh~" "!home!ea!.config!i3!i3blocks.conf~" "!home!ea!.xinitrc~" "!home!ea!.config!i3!weather.sh~" "!home!ea!.config!conky!conky.conf~" "!home!ea!Scripts!yt_play.sh~" "./" "!home!ea!Dropbox!Projects!work!done!unit3!zodiac_compatibility!zodiac_test.py~" "!home!ea!Dropbox!Projects!personal!c!newprogram!program.c~" "!home!ea!.Xresources~" "!home!ea!.config!fish!functions!hangouts.fish~" "!home!ea!.config!fish!functions!yt.fish~" "!home!ea!.config!sublime-text-3!Packages!User!Preferences.sublime-settings~" "!home!ea!Dropbox!Projects!work!War!war_classes.py~" "!home!ea!Scripts!vpn_connect.py~" "!home!ea!Scripts!VPN.sh~" "!home!ea!.emacs~" "!home!ea!.zshrc~" "!home!ea!Scripts!GMAIL.sh~" "!home!ea!.emacs.d!ido.last~" "!home!ea!.config!fish!functions!fish_prompt.fish~" "!home!ea!.config!i3!config~" "!home!ea!Scripts!hangouts.sh~" "!home!ea!Dropbox!Projects!personal!c!pointers!learning_pointers.c~" "../" "!home!ea!Dropbox!Projects!work!tic-tac-toe!tic-tac-toe_V2.py~" "!home!ea!.weechat!irc.conf~" "!home!ea!.config!cava!config~" "!home!ea!.config!i3!workspace-10.json~" "!home!ea!Dropbox!Projects!work!groupproject!intro~" "!home!ea!Dropbox!Projects!personal!c!pointers!pointers_demo.c~")
+
+ ("/home/ea/Dropbox/Projects/work/C/" (22293 46072 125747 558000) "./" "../" "hello" "helloworld.c")
+
+ ("/home/ea/Dropbox/Projects/work/done/unit2/lottery/" (22296 1837 591722 737000) "./" "LotteryPicker_Flow.png" "HLD_lottery.png" "../" "randomlottery_v2.py" "randomlottery.py")
+
+ ("/home/ea/Dropbox/Projects/work/dotfiles/" (22288 28392 212405 424000) ".emacs" "./" "../")
+
+ ("/home/ea/Dropbox/Projects/work/done/unit2/" (22271 19506 76029 523000) "personal_versions/" "./" "golfscores/" "lottery/" "storygenerator2/" "../" "doubles/")
+
+ ("/home/ea/Dropbox/Projects/work/done/" (22288 25183 332459 107000) "unit2/" "./" "unit3/" "../")
+
+ ("/home/ea/pytesting/" (22293 16659 255504 769000) "testing_deck.py" "./" "../")
+
+ ("/home/ea/.completegitbackup/" (22288 27522 732419 968000) "primemods.pyc" "./" "README.md" "zodiaccomp.py" "tic-tac-toe/" "war.py" "../" "war.py~" "zodiaccomp.py~" "done/" "gui_programming/")
+
+ ("/home/" (22261 44478 377957 356000) "./" "../" "ea/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ vimish-fold
+ vimish-fold-delete
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (vimish-fold-delete . 1)
+ (vimish-fold . 1)
+)
