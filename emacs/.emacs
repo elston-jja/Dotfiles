@@ -1,6 +1,13 @@
-;; Emacs Init File
+;;; Emacs Init File
+;;;
 
-;;Include Melpa library
+;;Include Melpa library and Marmalade
+(require 'package)
+ (add-to-list
+ 'package-archives
+ '("marmalade" . "http://marmalade-repo.org/packages/")
+ t)
+
 (when (>= emacs-major-version 24)
   (require 'package)
   (add-to-list
@@ -11,7 +18,7 @@
 
 ;; Custom Themes Safe; Load brin
 (setq custom-safe-themes t)
-(load-theme 'brin)
+(load-theme 'subatomic)
 
 ;; Autocomplete C and C++ headers
 (defun my:ac-c-headers-init ()
@@ -153,4 +160,54 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; Comment Commands
+(global-set-key [(control c)(control c)] 'comment-region)
+(global-set-key [(control c)(control v)] 'uncomment-region)
+
+;; Phi Search and Replace 
+(require 'phi-search)
+(global-set-key (kbd "C-s") 'phi-search)
+(global-set-key (kbd "C-r") 'phi-search-backward)
+(require 'phi-replace)
+(global-set-key (kbd "s-r") 'phi-replace-query)
+(setq phi-search-limit           10000
+      phi-search-case-sensitive  t)
+
+(set-face-attribute 'phi-search-selection-face nil
+                    :background "red")
+
+;; Spotify Intergration
+(require 'spotify)
+
+;; Do not use values larger than 50 for better compatibility across endpoints
+(setq spotify-api-search-limit 50)
+
+(global-set-key (kbd "C-;") 'spotify-playpause)
+(global-set-key (kbd "C-,") 'spotify-previous)
+(global-set-key (kbd "C-.") 'spotify-next)
+
+;; Smooth Scrolling
+
+(require 'smooth-scrolling)
+(smooth-scrolling-mode 1)
+
+;; Neotree (File branch system)
+(require 'neotree)
+
+(setq neo-smart-open t)
+(setq-default neo-show-hidden-files t)
+
+(global-set-key (kbd "s-b") 'neotree-toggle)
+
+;; Helm Setup
+
+(require 'helm)
+(require 'helm-config)
+
+(helm-mode 1)
+
+;;Easy Quit bind
+
+(global-set-key (kbd "C-x C-a") 'keyboard-quit)
 
