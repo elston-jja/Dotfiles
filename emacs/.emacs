@@ -1,5 +1,5 @@
-;;; Emacs Init File
-;;;
+;; ;;; Emacs Init File
+;; ;;;
 
 ;;Include Melpa library and Marmalade
 (require 'package)
@@ -18,7 +18,7 @@
 
 ;; Custom Themes Safe; Load brin
 (setq custom-safe-themes t)
-(load-theme 'subatomic)
+(load-theme 'flatui)
 
 ;; Autocomplete C and C++ headers
 (defun my:ac-c-headers-init ()
@@ -77,14 +77,22 @@
 (global-set-key [f7] 'toggle-scroll-bar)
 (global-set-key [f9] 'toggle-menu-bar-mode-from-frame)
 
-;; Saves autosaves to Dir --cleaner method-- 
+;; Saves autosaves to Dir --cleaner method--
 (setq backup-directory-alist
      `((".*" . ,"/home/ea/Dropbox/Backups")))
 (setq auto-save-file-name-transforms
      `((".*" ,"/home/ea/Dropbox/Backups")))
 
-;; Closing Parenthesis and other things
+;; Closijng Parenthesis and other things
 (electric-pair-mode 1)
+(setq c-default-style "linux"
+	  c-basic-offset 4)
+;Show brackets
+(show-paren-mode 1)1
+(setq show-paren-style 'mixed)
+(function-args-mode 1)
+(fa-config-default)
+
 
 ;; Auto Complete for Lisp...etc
 (ac-config-default)
@@ -112,17 +120,27 @@
 ;; Highlight the Current Line
 (global-hl-line-mode 1)
 ;; To customize the background color
-(set-face-background 'hl-line "#354054") 
-
+(set-face-background 'hl-line "#DBE0E0")
 ;; Custom Faces
 (custom-set-faces
- '(default ((t (:family "Inconsolata" :foundry "PfEd" :slant normal :weight normal :height 103 :width normal))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Monaco" :foundry "PfEd" :slant normal :weight normal :height 103 :width normal))))
  '(mode-line ((t (:foreground "#AAAAAA" :background "#4F5B66" :box nil))))
  '(mode-line-inactive ((t (:foreground "#333333" :background "#4F5B66" :box nil)))))
 
 ;; Set Variables
 (custom-set-variables
- '(inhibit-startup-screen t))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
+ '(package-selected-packages
+   (quote
+	(flyspell-popup ace-flyspell leuven-theme avk-emacs-themes flatui-theme latex-preview-pane smartparens evil-smartparens function-args vimish-fold use-package sublime-themes subatomic-theme spotify smooth-scrolling smex phi-search neotree multi mode-icons helm flycheck-irony flx-ido company-irony avy auto-indent-mode auto-complete-c-headers auto-complete-auctex ac-math ac-c-headers))))
 
 ;; Disable sleep
 (global-unset-key (kbd "C-z"))
@@ -138,10 +156,10 @@
     (setq comment-column 60)))
 
 ;; Change the default directory into my personal C++ file
-(setq default-directory "/home/ea/Dropbox/Projects/personal/c++")
+(setq default-directory "/home/ea/Dropbox/Projects/personal_projects/c++")
 
 ;; Change default compilaton command
-(setq compile-command "g++ -Wall -o ")
+(setq compile-command "make")
 
 ;; Search For Files
 ; Define a search index
@@ -152,14 +170,14 @@
 ;; disable ido faces to see flx highlights.
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
-(setq gc-cons-threshold 20000000)
+(setq gc-cons-threshold 2000000)
 
 ;; Smex Autocomplete for Commands
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Comment Commands
 (global-set-key [(control c)(control c)] 'comment-region)
@@ -168,9 +186,9 @@
 ;; Phi Search and Replace 
 (require 'phi-search)
 (global-set-key (kbd "C-s") 'phi-search)
-(global-set-key (kbd "C-r") 'phi-search-backward)
+;;(global-set-key (kbd "C-r") 'phi-search-backward)
 (require 'phi-replace)
-(global-set-key (kbd "s-r") 'phi-replace-query)
+(global-set-key (kbd "s-s") 'phi-replace-query)
 (setq phi-search-limit           10000
       phi-search-case-sensitive  t)
 
@@ -200,14 +218,69 @@
 
 (global-set-key (kbd "s-b") 'neotree-toggle)
 
-;; Helm Setup
+;; ;; Helm Setup
 
 (require 'helm)
 (require 'helm-config)
 
+
 (helm-mode 1)
 
-;;Easy Quit bind
+;; Semantic
 
-(global-set-key (kbd "C-x C-a") 'keyboard-quit)
+(semantic-mode 1)
 
+(defun my:add-semantic-to-autocomplete() 
+  (add-to-list 'ac-sources 'ac-source-semantic)
+)
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+; turn on ede mode 
+(global-ede-mode 1)
+; create a project for our program.
+(ede-cpp-root-project "my project" :file "~/Dropbox/Projects/personal_projects/c++/.Root"
+		      :include-path '("/usr/include")
+		      :system-include-path '( "/usr/include" )
+		      :system-include-path '( "/usr/include/SDL2" ))
+		      
+; you can use system-include-path for setting up the system header file locations.
+; turn on automatic reparsing of open buffers in semantic
+(global-semantic-idle-scheduler-mode 1)
+
+;; Tabs vs spaces
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 4) 
+(defvaralias 'c-basic-offset 'tab-width)
+
+(require 'smartparens-config)
+
+(sp-local-pair 'c++-mode "{" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+
+(defun my-create-newline-and-enter-sexp (&rest _ignored)
+  "Open a new brace or bracket expression, with relevant newlines and indent. "
+  (newline)
+  (indent-according-to-mode)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+;; arduino-mode
+(require 'cl)
+(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
+(add-to-list 'auto-mode-alist '("\.ino$" . arduino-mode))
+
+;; Latex
+
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+(add-hook 'LaTeX-mode-hook 'latex-preview-pane-mode)
+;;(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+(setq-default TeX-PDF-mode t)
+
+
+(setq doc-view-continuous t)
+
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(require 'ace-flyspell)
+
+(define-key flyspell-mode-map (kbd "C-r") #'flyspell-popup-correct)
