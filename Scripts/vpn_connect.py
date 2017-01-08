@@ -28,10 +28,10 @@ class MyCompleter(object):  # Custom completer
         except IndexError:
             return None
 def help_statement():
-    print"    FUNCTION    |     USE"
-    print"                |"
-    print"Get server list |    <tab><tab>"
-    print"Auto-Complete   |    PARTIAL/SERVER/NAME<tab>"
+    print("    FUNCTION    |     USE")
+    print("                |")
+    print("Get server list |    <tab><tab>")
+    print("Auto-Complete   |    PARTIAL/SERVER/NAME<tab>")
         
 completer = MyCompleter(opendir)
 readline.set_completer(completer.complete)
