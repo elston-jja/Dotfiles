@@ -350,3 +350,20 @@
         (restore-buffer-modified-p nil))))))
 
 (setq org-hide-emphasis-markers t)
+
+
+;; Set the font to DejaVu Sans Mono
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "#002b36" :foreground "#839496" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 99 :width normal :foundry "outline" :family "DejaVu Sans Mono"))))
+ '(org-level-1 ((t (:inherit variable-pitch :foreground "#E89787" :height 2.0 :family "Consolas"))))
+ '(org-level-2 ((t (:inherit variable-pitch :foreground "#9DED8A" :height 1.7 :family "Consolas"))))
+ '(org-level-3 ((t (:inherit variable-pitch :foreground "#8CD5F5" :height 1.5 :family "Consolas"))))
+ '(org-level-4 ((t (:inherit variable-pitch :height 1.4 :family "Consolas"))))
+ '(org-level-5 ((t (:inherit variable-pitch :family "Consolas"))))
+ '(org-level-6 ((t (:inherit variable-pitch :family "Consolas"))))
+ '(org-level-7 ((t (:inherit variable-pitch :family "Consolas"))))
+ '(org-todo ((t (:foreground "#54EBFF" :height 2.0 :weight bold)))))
